@@ -3,13 +3,14 @@ import java.util.Scanner;
 public class Starter {
     public static void main(String args[]) {
         // Variables and scanner
-        Scanner keyboard = new Scanner(System.in);
-        String userinput;
-        Numbers numbers;
+        Scanner keyboard = new Scanner(System.in); // Scanner for user input
+        String userinput; // the userinput as a string
+        Numbers numbers; // the nubers object to hold the number array
 
         // Ask the user, "How high do you want to count?" and get their input
         System.out.println("How high do you want to count?");
         userinput = keyboard.next();
+
         // Validate the input using a method
         while (!Validator.Validator(userinput)) {
             // If the input is not valid, ask the user,
@@ -17,8 +18,9 @@ public class Starter {
             System.out.println("That number is not valid. \nHow high do you want to count?");
             userinput = keyboard.next();
         } 
-        numbers = new Numbers(Integer.parseInt(userinput));
+
         // Use a method to output the solution
+        numbers = new Numbers(Integer.parseInt(userinput));
         numbers.output();
 
         // close scanner - Erik
