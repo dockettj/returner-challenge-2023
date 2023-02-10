@@ -3,8 +3,12 @@ import java.util.Scanner;
 public class Starter {
     public static void main(String args[]) {
         // Variables and scanner
+        String input ="";
+        Scanner keyboard = new Scanner(System.in);
 
         // Ask the user, "How high do you want to count?" and get their input
+        System.out.println("How high do you want to count");
+        input = keyboard.next();
 
         // Validate the input using a method
         // If the input is not valid, ask the user,
@@ -14,6 +18,10 @@ public class Starter {
     }
 
     // Create a method that validates the input and returns true if valid
+    public static Boolean Validater(String iinput){
+        
+    return
+    }
 
     // Create a method that outputs the following for each number from 1
     // to whatever the user entered.
