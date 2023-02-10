@@ -1,3 +1,7 @@
+/**
+ * Used to store the numbers in a array
+ */
+
 public class Numbers {
 
     private int[] numbers;
@@ -10,7 +14,9 @@ public class Numbers {
         }
     }
 
-
+    /**
+     * Output uses the {@code int[] numbers} and outputs the result depending on if the number is evenly divisable by 5, 3, or both
+     */
     public void output(){
         for (int i = 0; i < numbers.length; i++) {
             
