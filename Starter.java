@@ -5,6 +5,7 @@ public class Starter {
         // Variables and scanner
         Scanner keyboard = new Scanner(System.in);
         String userinput;
+        Numbers numbers;
 
         // Ask the user, "How high do you want to count?" and get their input
         System.out.println("How high do you want to count?");
@@ -16,9 +17,11 @@ public class Starter {
             System.out.println("That number is not valid. \nHow high do you want to count?");
             userinput = keyboard.next();
         } 
-
+        numbers = new Numbers(Integer.parseInt(userinput));
         // Use a method to output the solution
-        output(Integer.parseInt(userinput));
+        numbers.output();
+
+        // close scanner - Erik
         keyboard.close();
     }
 
