@@ -8,28 +8,34 @@ public class Starter {
         // Ask the user, "How high do you want to count?" and get their input
         System.out.println("How high do you want to count?");
          userin = keyboard.nextInt();
-        // Validate the input using a method
+         keyboard.close();
+         // Validate the input using a method
+        
             // If the input is not valid, ask the user,
             // "That number is not valid. \nHow high do you want to count?"
+        final void idek(int userin) {
+            Scanner ahhh = new Scanner(System.in);
             System.out.println("That number is not valid. \nHow high do you want to count?");
-            userin = keyboard.nextInt();
-            keyboard.close();
-        // Use a method to output the solution
+            userin = ahhh.nextInt();
+        }
+            // Use a method to output the solution
     
 
     // Create a method that validates the input and returns true if valid
-     public static int inValidator(userin) { 
+     final boolean inValidator(int userin) {
+        boolean status = true; 
          int num = 0;
-        if(num == 5 || num == 3){
-            num = userin;
-            return num; 
+         if(num == 25 || num == 15){
+             num = userin;
+             return status; 
+            }
         }
-         }
-            
         
-            // Create a method that outputs the following for each number from 1
-            // to whatever the user entered.
-        public static int outputs(int num){
+        
+        // Create a method that outputs the following for each number from 1
+        // to whatever the user entered.
+        final static String outputs(int num){
+        for ()
             if (num/5) {
                 System.out.println("BAISD");
             } else if(num/3){
@@ -37,17 +43,15 @@ public class Starter {
             }else if(num/3 && num/5){
                 System.out.println("BAISD is awesome!");
             }
-                
-            }
-            // If the number is evenly divisible by 5, output, "BAISD "
-            // If the number is evenly divisible by 3, output, "is awesome!"
-            // If the number is evenly divisible by 3 and 5, output, "BAISD is awesome!"
             
-        }            
-    }
         }
+        // If the number is evenly divisible by 5, output, "BAISD "
+        // If the number is evenly divisible by 3, output, "is awesome!"
+        // If the number is evenly divisible by 3 and 5, output, "BAISD is awesome!"
+        
+    }      
 
-
+}
 
 // Ways to stand out:
 
